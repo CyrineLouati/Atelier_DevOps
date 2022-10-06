@@ -4,7 +4,7 @@ pipeline {
 	stage('Checkout GIT'){
 	steps {
 		echo 'Pulling...';
-    		sh """ mvn −version """;
+    		sh """ mvn --version""";
 		}
 	}
 	}

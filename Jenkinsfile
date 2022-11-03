@@ -8,7 +8,8 @@ pipeline {
 	steps {
 		echo 'Pulling from GIT...';
     		sh """ mvn --version """;
-		sh """ mvn clean install """;
+		sh """ mvn clean """;
+		sh """ mvn install """;
 		sh """ mvn clean test """;
 		}
 	post 	{
